@@ -23,7 +23,6 @@ public class Main {
     public static void main(String[] args) throws RpcException {
         RpcClient client = new RpcClient(Cluster.DEVNET);
 
-        // Sử dụng một chuỗi Base58 hợp lệ thay vì hex.
         PublicKey mainPublicKey = new PublicKey("NbMPFownKdqHcLTNnbr1rM7JYTKZifTrUoQLfBTMsTc"); //VIETANH12
         PublicKey toPublicKey = new PublicKey("9U1kCydf5PCspt7D1mJwtYvTiPBtvKeuJRJqw3YQ62yx"); //NGTRPHUC
         long balance = client.getApi().getBalance(mainPublicKey);
