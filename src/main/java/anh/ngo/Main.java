@@ -9,16 +9,14 @@ import org.p2p.solanaj.rpc.Cluster;
 import org.p2p.solanaj.rpc.RpcClient;
 import org.p2p.solanaj.rpc.RpcException;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void threadSleep(int time) {
+/*    public static void threadSleep(int time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public static void main(String[] args) throws RpcException {
         RpcClient client = new RpcClient(Cluster.DEVNET);
